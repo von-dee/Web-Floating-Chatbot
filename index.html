@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>live chat</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <script type="text/javascript" src="floating-wpp.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .container{
+            display: flex;
+            width: 100%;
+        }
+        .fixed{
+            width: 35%;
+        }
+        .flex-item{
+            flex-grow: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        
+        
+    </div>
+
+    <div>
+            
+            <!-- <div class="container">
+              <div class="fixed"><img src="./kofi.png" alt=""></div>
+              <div class="flex-item">
+                <h3>Hi, Im Kofi</h3>
+                <p>You can ask me any question</p>
+              </div>
+            </div> -->
+    </div>
+
+    <div id="myButton"></div>
+</body>
+
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '5491133359850',
+            popupMessage: 'Hello, how can we help you?',
+            message: "I'd like to order a pizza",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Helo!',
+            headerColor: 'white',
+            backgroundColor: 'white',
+            buttonImage: '<img src="float.png" />'
+        });
+    });
+</script>
+
+</html>
